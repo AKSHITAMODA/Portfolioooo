@@ -18,12 +18,30 @@ export function Contact() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    setFormData({ name: '', email: '', message: '' })
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const res = await fetch("https://formspree.io/f/mykrnznj", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(formData),
+  });
+
+  if (res.ok) {
+    alert("Message sent successfully!");
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  } else {
+    alert("Failed to send message.");
   }
+};
 
   const container = {
     hidden: { opacity: 0 },
@@ -77,7 +95,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="section-spacing relative overflow-hidden">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none">
         <motion.div
           className="glow-blob w-96 h-96 bg-primary"
           style={{ bottom: '-10%', left: '5%' }}
@@ -86,7 +104,7 @@ export function Contact() {
         />
       </div>
 
-      <div className="relative container-wide mx-auto">
+      <div className="relative z-10 container-wide mx-auto">
         <motion.div
           className="space-y-20"
           variants={container}
