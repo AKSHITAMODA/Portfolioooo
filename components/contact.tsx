@@ -118,7 +118,7 @@ export function Contact() {
               Open to opportunities and collaborations. Reach out to discuss projects, ideas, or just to chat!
             </p>
             <motion.a
-              href="https://drive.google.com/file/d/1V_3OmFrE9RUyuznSJhh8BMYnJudw3YaI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lsRIoXe-aX_nxEUYLsVyoi6WthKc8e9_/view"
               download="Akshita_Moda_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
