@@ -88,7 +88,7 @@ export function Hero() {
 
             <motion.div variants={item} className="flex flex-wrap gap-4 pt-6">
               <motion.a
-                href="https://drive.google.com/file/d/1V_3OmFrE9RUyuznSJhh8BMYnJudw3YaI/view?usp=sharing"
+                href="https://drive.google.com/file/d/1lsRIoXe-aX_nxEUYLsVyoi6WthKc8e9_/view?usp=sharing"
                 download="Akshita_Moda_Resume.pdf"
                 whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(59, 130, 246, 0.3)' }}
                 whileTap={{ scale: 0.95 }}
