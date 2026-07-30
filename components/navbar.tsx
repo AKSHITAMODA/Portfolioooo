@@ -67,7 +67,7 @@ export function Navbar() {
 
           <div className="hidden md:flex gap-4 items-center">
             <motion.a
-              href="https://drive.google.com/file/d/1lsRIoXe-aX_nxEUYLsVyoi6WthKc8e9_/view?usp=sharing"
+              href="https://drive.google.com/file/d/18bCfH6qqyhPB40Bryws6XZdYk76PHg_s/view?usp=sharing"
               download="Akshita_Moda_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
